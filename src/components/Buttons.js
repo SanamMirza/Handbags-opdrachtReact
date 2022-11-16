@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Buttons(props) {
+function Buttons( { click,children, toBeDisabled } ) {
     return (
-        <nav>
-          <button></button>
-
-        </nav>
+          <button
+              disabled={toBeDisabled}
+              onClick= {click}>
+              {children}
+          </button>
     );
 }
 
